@@ -1,0 +1,29 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+@layer base {
+    button:focus, a:focus, input:focus {
+        outline: none;
+    }
+}
+
+@layer utilities {
+    .color-transition {
+        @apply transition-colors duration-150 ease-linear;
+    }
+    
+    .shadow-transition {
+        @apply transition-shadow duration-150 ease-linear;
+    }
+    
+    .opacity-transition {
+        @apply transition-opacity duration-150 ease-linear;
+    }
+    
+    .all-transition {
+        @apply transition-all duration-150 ease-linear;
+    }
+}
